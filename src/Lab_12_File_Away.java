@@ -1,15 +1,15 @@
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.BufferedInputStream; //Used to add functionality to the Buffered Reader. Creates internal buffer array to store read bytes
+import java.io.BufferedReader; //Reads the text from the input stream and buffers the characters for smooth reading
+import java.io.File; //File class needed and used for a file or path name
+import java.io.FileNotFoundException; //Needed to throw error when opening a file and the name of path fails
+import java.io.IOException; //Needed for try catch block
+import java.io.InputStream; //A class that provides a method to return next byte of input
+import java.io.InputStreamReader; //Needed for converting bytes into characters
 import java.nio.file.Files; //Imports file. Uses built in methods for working the actual files and directories and creating input and output streams
 import java.nio.file.Path; //Imports the path. Needed for creation of hierarchy of file path. Provides info about file location, size, type and permissions etc.
-import static java.nio.file.StandardOpenOption.CREATE;
-import java.util.ArrayList;
-import javax.swing.JFileChooser;
+import static java.nio.file.StandardOpenOption.CREATE; //Needed to open chosen file
+import java.util.ArrayList; //Package used for a creating resizable array
+import javax.swing.JFileChooser; //Used for creating GUI so user can choose a file
 
 public class Lab_12_File_Away
 {
